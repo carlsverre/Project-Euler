@@ -11,6 +11,6 @@ which do not exceed four million.
 
 Solution
 --------
-Generate the fibonacci sequence to 4 million
-Filter non-even numbers
-Sum and print
+- Generate the fibonacci sequence to 4 million
+- Filter non-even numbers
+- Sum and print
