@@ -7,5 +7,3 @@ merged_list.extend(
     )
 )
 print sum(merged_list)
-
-

@@ -1,29 +1,30 @@
 import math
-
-def primes_up_to_n(n):
-    primes = [2,3]
-    start = 4
-    for num in range(start,n):
-        nap = 0
-        for prime in primes:
-            if num % prime == 0:
-                nap=1
-                break
-            if prime**2 > num:
-                break
-        if nap != 1:
-            primes.append(num)
-
-    return primes
+import sys
 
 solve_num = 600851475143
 solve_num_sqrt = int(math.ceil(math.sqrt(solve_num)))
 
-p = primes_up_to_n(solve_num_sqrt)
-p.reverse()
+primes = [2,3]
+number = 4
+cursor_prime = 2
 
-for prime in p:
-    if solve_num % prime == 0:
-        print prime
-        break
+def get_next_prime():
+    global number, primes
+    while True:
+        for prime in primes:
+            if number%prime == 0:
+                primes.append(number)
+                number += 1
+                return number
+        number += 1
+
+max = 0
+while cursor_prime < solve_num_sqrt:
+    cursor_prime = get_next_prime()
+    while solve_num % cursor_prime == 0:
+        solve_num /= cursor_prime
+        if solve_num == 1:
+            print cursor_prime
+            sys.exit(0)
+        max = cursor_prime
 
