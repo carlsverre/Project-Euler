@@ -8,8 +8,8 @@ Solution
 --------
 + Multiply up the LCM's!  Pseudo:
 
-def f():
-    var hold = 2
-    for num in 3..20
-       hold=lcm(hold,num) 
-    return hold
+	def f():
+		var hold = 2
+		for num in 3..20
+		   hold=lcm(hold,num) 
+		return hold

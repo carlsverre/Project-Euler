@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import math
 import sys
 
@@ -24,7 +25,7 @@ while cursor_prime < solve_num_sqrt:
     while solve_num % cursor_prime == 0:
         solve_num /= cursor_prime
         if solve_num == 1:
-            print cursor_prime
+            print "Solution 003: " + str(cursor_prime)
             sys.exit(0)
         max = cursor_prime
 

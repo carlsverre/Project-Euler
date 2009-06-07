@@ -1,3 +1,4 @@
+#!/usr/bin/python
 products = []
 small = 1000
 step = 100
@@ -17,4 +18,4 @@ while palendrome == None and small > 0:
             palendrome = num
             break
 
-print palendrome
+print "Solution 004: " + str(palendrome)

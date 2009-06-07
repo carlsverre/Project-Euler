@@ -1,4 +1,4 @@
-
+#!/usr/bin/python
 def fib():
     sequence = [1,1]
     last=1
@@ -8,4 +8,4 @@ def fib():
     return sequence
 
 seq = fib()
-print sum(filter(lambda x: not x%2, seq))
+print "Solution 002: " + str(sum(filter(lambda x: not x%2, seq)))

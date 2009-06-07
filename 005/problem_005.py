@@ -1,3 +1,4 @@
+#!/usr/bin/python
 def lcm(x,y):
     return x*y/gcd(x,y)
 
@@ -10,4 +11,4 @@ final = 2
 for num in range(3,21):
     final = lcm(final,num)
 
-print final
+print "Solution 005: " + str(final)

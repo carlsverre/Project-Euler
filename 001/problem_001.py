@@ -6,4 +6,4 @@ merged_list.extend(
         map(lambda x: 5*x, range(1,200))
     )
 )
-print sum(merged_list)
+print "Solution 001: " + str(sum(merged_list))
